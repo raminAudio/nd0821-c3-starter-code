@@ -65,7 +65,7 @@ def test_get_items():
     r = client.get("/prediction")
     assert r.status_code != 200, "test_get_items"
 
-test_welcome_message()
-test_get_items()
-test_prediction_smaller()
-test_prediction_bigger()
+# test_welcome_message()
+# test_get_items()
+# test_prediction_smaller()
+# test_prediction_bigger()
