@@ -1,0 +1,295 @@
+Sun, 08 May 2022 17:26:37 DEBUG    Creating converter from 5 to 3
+Sun, 08 May 2022 17:26:38 INFO     Main Category workclass
+Sun, 08 May 2022 17:26:38 INFO     Category Self-emp-inc
+Sun, 08 May 2022 17:26:38 INFO     Precision 0.7603305785123967
+Sun, 08 May 2022 17:26:38 INFO     recall 0.7540983606557377
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.7572016460905349
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category workclass
+Sun, 08 May 2022 17:26:38 INFO     Category Without-pay
+Sun, 08 May 2022 17:26:38 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:38 INFO     recall 1.0
+Sun, 08 May 2022 17:26:38 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category workclass
+Sun, 08 May 2022 17:26:38 INFO     Category Federal-gov
+Sun, 08 May 2022 17:26:38 INFO     Precision 0.7349397590361446
+Sun, 08 May 2022 17:26:38 INFO     recall 0.8591549295774648
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.7922077922077921
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category Preschool
+Sun, 08 May 2022 17:26:38 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:38 INFO     recall 1.0
+Sun, 08 May 2022 17:26:38 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category Bachelors
+Sun, 08 May 2022 17:26:38 INFO     Precision 0.7331932773109243
+Sun, 08 May 2022 17:26:38 INFO     recall 0.8250591016548463
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.7764182424916573
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category 11th
+Sun, 08 May 2022 17:26:38 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:38 INFO     recall 0.0
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category 1st-4th
+Sun, 08 May 2022 17:26:38 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:38 INFO     recall 0.0
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category 9th
+Sun, 08 May 2022 17:26:38 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:38 INFO     recall 0.0
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category Masters
+Sun, 08 May 2022 17:26:38 INFO     Precision 0.7623762376237624
+Sun, 08 May 2022 17:26:38 INFO     recall 0.8324324324324325
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.7958656330749353
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category Prof-school
+Sun, 08 May 2022 17:26:38 INFO     Precision 0.6966292134831461
+Sun, 08 May 2022 17:26:38 INFO     recall 0.9253731343283582
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.794871794871795
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category 7th-8th
+Sun, 08 May 2022 17:26:38 INFO     Precision 0.0
+Sun, 08 May 2022 17:26:38 INFO     recall 0.0
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category 12th
+Sun, 08 May 2022 17:26:38 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:38 INFO     recall 0.0
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category 5th-6th
+Sun, 08 May 2022 17:26:38 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:38 INFO     recall 0.0
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:38 INFO     Main Category education
+Sun, 08 May 2022 17:26:38 INFO     Category Doctorate
+Sun, 08 May 2022 17:26:38 INFO     Precision 0.8450704225352113
+Sun, 08 May 2022 17:26:38 INFO     recall 0.9230769230769231
+Sun, 08 May 2022 17:26:38 INFO     fbeta 0.8823529411764706
+Sun, 08 May 2022 17:26:38 INFO     -------------------------------
+Sun, 08 May 2022 17:26:39 INFO     Main Category education
+Sun, 08 May 2022 17:26:39 INFO     Category 10th
+Sun, 08 May 2022 17:26:39 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:39 INFO     recall 0.0
+Sun, 08 May 2022 17:26:39 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:39 INFO     -------------------------------
+Sun, 08 May 2022 17:26:39 INFO     Main Category marital-status
+Sun, 08 May 2022 17:26:39 INFO     Category Married-AF-spouse
+Sun, 08 May 2022 17:26:39 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:39 INFO     recall 0.6666666666666666
+Sun, 08 May 2022 17:26:39 INFO     fbeta 0.8
+Sun, 08 May 2022 17:26:39 INFO     -------------------------------
+Sun, 08 May 2022 17:26:39 INFO     Main Category marital-status
+Sun, 08 May 2022 17:26:39 INFO     Category Married-spouse-absent
+Sun, 08 May 2022 17:26:39 INFO     Precision 0.0
+Sun, 08 May 2022 17:26:39 INFO     recall 0.0
+Sun, 08 May 2022 17:26:39 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:39 INFO     -------------------------------
+Sun, 08 May 2022 17:26:39 INFO     Main Category occupation
+Sun, 08 May 2022 17:26:39 INFO     Category Prof-specialty
+Sun, 08 May 2022 17:26:39 INFO     Precision 0.7211055276381909
+Sun, 08 May 2022 17:26:39 INFO     recall 0.8153409090909091
+Sun, 08 May 2022 17:26:39 INFO     fbeta 0.7653333333333333
+Sun, 08 May 2022 17:26:39 INFO     -------------------------------
+Sun, 08 May 2022 17:26:39 INFO     Main Category occupation
+Sun, 08 May 2022 17:26:39 INFO     Category Handlers-cleaners
+Sun, 08 May 2022 17:26:39 INFO     Precision 0.0
+Sun, 08 May 2022 17:26:39 INFO     recall 0.0
+Sun, 08 May 2022 17:26:39 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:39 INFO     -------------------------------
+Sun, 08 May 2022 17:26:40 INFO     Main Category occupation
+Sun, 08 May 2022 17:26:40 INFO     Category Armed-Forces
+Sun, 08 May 2022 17:26:40 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:40 INFO     recall 1.0
+Sun, 08 May 2022 17:26:40 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:40 INFO     -------------------------------
+Sun, 08 May 2022 17:26:40 INFO     Main Category occupation
+Sun, 08 May 2022 17:26:40 INFO     Category Priv-house-serv
+Sun, 08 May 2022 17:26:40 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:40 INFO     recall 1.0
+Sun, 08 May 2022 17:26:40 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:40 INFO     -------------------------------
+Sun, 08 May 2022 17:26:40 INFO     Main Category occupation
+Sun, 08 May 2022 17:26:40 INFO     Category Machine-op-inspct
+Sun, 08 May 2022 17:26:40 INFO     Precision 0.3333333333333333
+Sun, 08 May 2022 17:26:40 INFO     recall 0.06521739130434782
+Sun, 08 May 2022 17:26:40 INFO     fbeta 0.10909090909090909
+Sun, 08 May 2022 17:26:40 INFO     -------------------------------
+Sun, 08 May 2022 17:26:40 INFO     Main Category occupation
+Sun, 08 May 2022 17:26:40 INFO     Category Tech-support
+Sun, 08 May 2022 17:26:40 INFO     Precision 0.6753246753246753
+Sun, 08 May 2022 17:26:40 INFO     recall 0.8
+Sun, 08 May 2022 17:26:40 INFO     fbeta 0.7323943661971831
+Sun, 08 May 2022 17:26:40 INFO     -------------------------------
+Sun, 08 May 2022 17:26:40 INFO     Main Category occupation
+Sun, 08 May 2022 17:26:40 INFO     Category Exec-managerial
+Sun, 08 May 2022 17:26:40 INFO     Precision 0.7248803827751196
+Sun, 08 May 2022 17:26:40 INFO     recall 0.7911227154046997
+Sun, 08 May 2022 17:26:40 INFO     fbeta 0.7565543071161048
+Sun, 08 May 2022 17:26:40 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Nicaragua
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 0.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Yugoslavia
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 0.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Ireland
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 1.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Trinadad&Tobago
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 0.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Guatemala
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 0.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Laos
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 0.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category South
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 0.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Thailand
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 1.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Dominican-Republic
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 1.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Jamaica
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 0.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Cambodia
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 0.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category France
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 1.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Columbia
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 0.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:41 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:41 INFO     Category Hong
+Sun, 08 May 2022 17:26:41 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:41 INFO     recall 0.0
+Sun, 08 May 2022 17:26:41 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:41 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category Outlying-US(Guam-USVI-etc)
+Sun, 08 May 2022 17:26:42 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:42 INFO     recall 1.0
+Sun, 08 May 2022 17:26:42 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category Portugal
+Sun, 08 May 2022 17:26:42 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:42 INFO     recall 1.0
+Sun, 08 May 2022 17:26:42 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category Peru
+Sun, 08 May 2022 17:26:42 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:42 INFO     recall 1.0
+Sun, 08 May 2022 17:26:42 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category Greece
+Sun, 08 May 2022 17:26:42 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:42 INFO     recall 0.0
+Sun, 08 May 2022 17:26:42 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category Hungary
+Sun, 08 May 2022 17:26:42 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:42 INFO     recall 0.0
+Sun, 08 May 2022 17:26:42 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category Japan
+Sun, 08 May 2022 17:26:42 INFO     Precision 0.7142857142857143
+Sun, 08 May 2022 17:26:42 INFO     recall 0.8333333333333334
+Sun, 08 May 2022 17:26:42 INFO     fbeta 0.7692307692307692
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category Ecuador
+Sun, 08 May 2022 17:26:42 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:42 INFO     recall 1.0
+Sun, 08 May 2022 17:26:42 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category Honduras
+Sun, 08 May 2022 17:26:42 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:42 INFO     recall 1.0
+Sun, 08 May 2022 17:26:42 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category Haiti
+Sun, 08 May 2022 17:26:42 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:42 INFO     recall 0.0
+Sun, 08 May 2022 17:26:42 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category China
+Sun, 08 May 2022 17:26:42 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:42 INFO     recall 0.0
+Sun, 08 May 2022 17:26:42 INFO     fbeta 0.0
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------
+Sun, 08 May 2022 17:26:42 INFO     Main Category native-country
+Sun, 08 May 2022 17:26:42 INFO     Category Vietnam
+Sun, 08 May 2022 17:26:42 INFO     Precision 1.0
+Sun, 08 May 2022 17:26:42 INFO     recall 1.0
+Sun, 08 May 2022 17:26:42 INFO     fbeta 1.0
+Sun, 08 May 2022 17:26:42 INFO     -------------------------------

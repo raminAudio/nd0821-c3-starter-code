@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  pipeline:
+    cmd: python ./train_model.py
+    deps:
+    - path: train_model.py
+      md5: 8398ead6366e6a57c25ca039aad9b351
+      size: 1172
+    params:
+      params.yaml:
+        dropout1: 0.02
+        dropout2: 0.5
+        epochs: 10
+        lr: 0.0004
+        n_units_l1: 512
+        n_units_l2: 256
+        n_units_l3: 256
+        n_units_l4: 128
+    outs:
+    - path: fbeta.json
+      md5: c416837c82ccbe7059fdb8e47bb925ec
+      size: 29

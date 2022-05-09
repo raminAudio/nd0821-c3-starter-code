@@ -1,0 +1,9 @@
+n_units_l1: 512
+n_units_l2: 256
+n_units_l3: 256
+n_units_l4: 128
+batch_size: 32
+dropout1: 0.02
+dropout2: 0.5
+lr: 0.0004
+epochs: 10

@@ -1,0 +1,12 @@
+./eda.ipynb
+./.dvc/cache/02/eeb3236517c97b3fd7b13373655ebb
+./.dvc/cache/a5/e80795d859f3908b01a7e675c5c063
+./.dvc/cache/26/fe782a9c253641e0b50a4207eed5da
+./.dvc/cache/ef/e3ce392eeb978560269149a626602c
+./.dvc/cache/23/2e39cfb41ba173440e2faf6a8ecf43
+./.dvc/cache/14/5de00f6e6053d3f7044628f9a5b5ff
+./model/TFmodel_v1.h5
+./.git/objects/pack/pack-6b0ec295f0e49f88dc5a0761c06479e678e92f86.pack
+./data/census.csv
+./data/xTrain.pickle
+./data/census_clean.csv

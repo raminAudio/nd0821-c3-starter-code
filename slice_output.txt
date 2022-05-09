@@ -1,0 +1,330 @@
+    Main Category workclass
+    Category Federal-gov
+    Precision 0.7368421052631579
+    recall 0.7272727272727273
+    fbeta 0.7320261437908497
+    -------------------------------
+     Main Category workclass
+     Category Self-emp-inc
+     Precision 0.7428571428571429
+     recall 0.8524590163934426
+     fbeta 0.7938931297709924
+     -------------------------------
+     Main Category education
+     Category 10th
+     Precision 0.5
+     recall 0.07692307692307693
+     fbeta 0.13333333333333336
+     -------------------------------
+     Main Category education
+     Category 7th-8th
+     Precision 0.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category education
+     Category Prof-school
+     Precision 0.8
+     recall 0.9620253164556962
+     fbeta 0.8735632183908046
+     -------------------------------
+     Main Category education
+     Category 1st-4th
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category education
+     Category 5th-6th
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category education
+     Category Preschool
+     Precision 1.0
+     recall 1.0
+     fbeta 1.0
+     -------------------------------
+    Main Category education
+    Category Bachelors
+    Precision 0.7170626349892009
+    recall 0.7460674157303371
+    fbeta 0.7312775330396475
+    -------------------------------
+    Main Category education
+    Category 11th
+    Precision 1.0
+    recall 0.0
+    fbeta 0.0
+    -------------------------------
+    Main Category education
+    Category Doctorate
+    Precision 0.7590361445783133
+    recall 0.9264705882352942
+    fbeta 0.8344370860927153
+    -------------------------------
+    Main Category education
+    Category 9th
+    Precision 1.0
+    recall 0.0
+    fbeta 0.0
+    -------------------------------
+    Main Category education
+    Category 12th
+    Precision 1.0
+    recall 0.0
+    fbeta 0.0
+    -------------------------------
+    Main Category education
+    Category Masters
+    Precision 0.7772511848341233
+    recall 0.8
+    fbeta 0.7884615384615385
+    -------------------------------
+     Main Category marital-status
+     Category Married-AF-spouse
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category marital-status
+     Category Widowed
+     Precision 0.5
+     recall 0.07142857142857142
+     fbeta 0.125
+     -------------------------------
+     Main Category occupation
+     Category Farming-fishing
+     Precision 1.0
+     recall 0.045454545454545456
+     fbeta 0.08695652173913045
+     -------------------------------
+     Main Category occupation
+     Category Handlers-cleaners
+     Precision 1.0
+     recall 0.05
+     fbeta 0.09523809523809523
+     -------------------------------
+     Main Category occupation
+     Category Machine-op-inspct
+     Precision 0.6
+     recall 0.05660377358490566
+     fbeta 0.10344827586206896
+     -------------------------------
+     Main Category occupation
+     Category Transport-moving
+     Precision 0.6363636363636364
+     recall 0.11475409836065574
+     fbeta 0.19444444444444445
+     -------------------------------
+     Main Category occupation
+     Category Tech-support
+     Precision 0.7068965517241379
+     recall 0.82
+     fbeta 0.7592592592592593
+     -------------------------------
+     Main Category occupation
+     Category Other-service
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category occupation
+     Category Priv-house-serv
+     Precision 1.0
+     recall 1.0
+     fbeta 1.0
+     -------------------------------
+     Main Category occupation
+     Category Exec-managerial
+     Precision 0.7398568019093079
+     recall 0.7908163265306123
+     fbeta 0.7644882860665846
+     -------------------------------
+     Main Category occupation
+     Category Prof-specialty
+     Precision 0.7156626506024096
+     recall 0.8181818181818182
+     fbeta 0.763496143958869
+     -------------------------------
+     Main Category relationship
+     Category Own-child
+     Precision 0.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category race
+     Category Amer-Indian-Eskimo
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category race
+     Category Other
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Thailand
+     Precision 1.0
+     recall 1.0
+     fbeta 1.0
+     -------------------------------
+     Main Category native-country
+     Category France
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Trinadad&Tobago
+     Precision 1.0
+     recall 1.0
+     fbeta 1.0
+     -------------------------------
+     Main Category native-country
+     Category El-Salvador
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Outlying-US(Guam-USVI-etc)
+     Precision 1.0
+     recall 1.0
+     fbeta 1.0
+     -------------------------------
+     Main Category native-country
+     Category Portugal
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Poland
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Ireland
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Jamaica
+     Precision 1.0
+     recall 1.0
+     fbeta 1.0
+     -------------------------------
+     Main Category native-country
+     Category Japan
+     Precision 1.0
+     recall 0.6
+     fbeta 0.7499999999999999
+     -------------------------------
+     Main Category native-country
+     Category Columbia
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Greece
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Hungary
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Honduras
+     Precision 1.0
+     recall 1.0
+     fbeta 1.0
+     -------------------------------
+     Main Category native-country
+     Category South
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Puerto-Rico
+     Precision 1.0
+     recall 1.0
+     fbeta 1.0
+     -------------------------------
+     Main Category native-country
+     Category Laos
+     Precision 1.0
+     recall 1.0
+     fbeta 1.0
+     -------------------------------
+     Main Category native-country
+     Category Nicaragua
+     Precision 1.0
+     recall 1.0
+     fbeta 1.0
+     -------------------------------
+     Main Category native-country
+     Category Guatemala
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Vietnam
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Cambodia
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Haiti
+     Precision 0.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Dominican-Republic
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Ecuador
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Peru
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category England
+     Precision 0.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------
+     Main Category native-country
+     Category Hong
+     Precision 1.0
+     recall 0.0
+     fbeta 0.0
+     -------------------------------

@@ -1,0 +1,4 @@
+outs:
+- md5: 831718174785e614e4e126d6be5e32e7
+  size: 22489218
+  path: xTrain.pickle
