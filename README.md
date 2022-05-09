@@ -5,14 +5,17 @@
 *  See model card model_card.md for more information. 
 
 
-#### Heroku Deployment Process:
+### Heroku Deployment Process:
  
 heroku apps:destroy raminapi # I delete the app to make sure I have a clean slate. 
 
 
-heroku create --app raminapi
-heroku buildpacks:clear 
+heroku create --app raminapi 
+
+heroku buildpacks:clear  
+
 heroku buildpacks:add --index 1 heroku-community/apt 
+
 heroku buildpacks:add --index 2 heroku/python 
 
 heroku config:set AWS_ACCESS_KEY_ID="" AWS_SECRET_ACCESS_KEY=""
@@ -21,24 +24,24 @@ git push heroku master
 
 Requierments: 
 
-numpy
-pandas
-scikit-learn
-pytest
-requests
-fastapi==0.65.2
-uvicorn
-gunicorn
-tensorflow-cpu
-pyyaml
-dvc
-dvc-s3
+numpy \\
+pandas \\
+scikit-learn \\
+pytest \\
+requests \\
+fastapi==0.65.2 \\
+uvicorn \\
+gunicorn \\
+tensorflow-cpu \\
+pyyaml \\
+dvc \\
+dvc-s3 \\
 
  pip list --format=freeze > requirements.txt # to make sure all relevant libraries are included
 
 #### Conda Setup
 
-conda create -n udacityPr4 "python=3..8.12” scikit-learn dvc pandas numpy pytest jupyter jupyterlab fastapi tensorflow-cpu gunicorn pyyaml uvicorn -c conda-forge
+conda create -n udacityPr4 "python=3.8.12” scikit-learn dvc pandas numpy pytest jupyter jupyterlab fastapi tensorflow-cpu gunicorn pyyaml uvicorn -c conda-forge
 
 #### AWS bucket Setup
 aws s3api create-bucket --bucket ramin-bucket2 --region us-west-1
@@ -52,12 +55,17 @@ dvc run --force -n pipeline -p n_units_l4 -p n_units_l1 -p n_units_l2 -p dropout
 dvc exp show  # to see metrics for different expriement
 
 #### run app locally
+
 uvicorn src.main:app --host=0.0.0.0 --port=${PORT:-5000}
+
 uvicorn src.main:app --reload
+
 heroku run bash --app raminapi # see heroku folder 
 
 ##### Good to know 
-touch runtime.txt; echo "python-3.8.12” >> runtime.txt  # add this to your folder if Heroku is giving not found uvicorn error may help
+touch runtime.txt; echo "python-3.8.12” >> runtime.txt  
+
+add this to your folder if Heroku is giving not found uvicorn error may help
 
 ##### If running out of space with Heroku try: 
 heroku plugins:install heroku-builds
@@ -65,22 +73,22 @@ heroku builds:cancel
 heroku restart
 
 
-##### Original Course Readme file. 
+# Original Course Readme file. 
 Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
 
-# Environment Set up
+### Environment Set up
 * Download and install conda if you don’t have it already.
     * Use the supplied requirements file to create a new environment, or
     * conda create -n [envname] "python=3.8" scikit-learn dvc pandas numpy pytest jupyter jupyterlab fastapi uvicorn -c conda-forge
     * Install git either through conda (“conda install git”) or through your CLI, e.g. sudo apt-get git.
 
-## Repositories
+### Repositories
 
 * Create a directory for the project and initialize Git and DVC.
    * As you work on the code, continually commit changes. Trained models you want to keep must be committed to DVC.
 * Connect your local Git repository to GitHub.
 
-## Set up S3
+### Set up S3
 
 * In your CLI environment install the<a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html" target="_blank"> AWS CLI tool</a>.
 * In the navigation bar in the Udacity classroom select **Open AWS Gateway** and then click **Open AWS Console**. You will not need the AWS Access Key ID or Secret Access Key provided here.
@@ -104,7 +112,7 @@ To use your new S3 bucket from the AWS CLI you will need to create an IAM user w
 * Add your <a href="https://github.com/marketplace/actions/configure-aws-credentials-action-for-github-actions" target="_blank">AWS credentials to the Action</a>.
 * Set up <a href="https://github.com/iterative/setup-dvc" target="_blank">DVC in the action</a> and specify a command to `dvc pull`.
 
-## Data
+### Data
 
 * Download census.csv from the data folder in the starter repository.
    * Information on the dataset can be found <a href="https://archive.ics.uci.edu/ml/datasets/census+income" target="_blank">here</a>.
@@ -113,7 +121,7 @@ To use your new S3 bucket from the AWS CLI you will need to create an IAM user w
 * To clean it, use your favorite text editor to remove all spaces.
 * Commit this modified data to DVC under a new name (we often want to keep the raw data untouched but then can keep updating the cooked version).
 
-## Model
+### Model
 
 * Using the starter code, write a machine learning model that trains on the clean data and saves the model. Complete any function that has been started.
 * Write unit tests for at least 3 functions in the model code.
@@ -121,7 +129,7 @@ To use your new S3 bucket from the AWS CLI you will need to create an IAM user w
    * Suggestion: for simplicity, the function can just output the performance on slices of just the categorical features.
 * Write a model card using the provided template.
 
-## API Creation
+### API Creation
 
 * Create a RESTful API using FastAPI this must implement:
    * GET on the root giving a welcome message.
@@ -131,7 +139,7 @@ To use your new S3 bucket from the AWS CLI you will need to create an IAM user w
     * Hint: the data has names with hyphens and Python does not allow those as variable names. Do not modify the column names in the csv and instead use the functionality of FastAPI/Pydantic/etc to deal with this.
 * Write 3 unit tests to test the API (one for the GET and two for POST, one that tests each prediction).
 
-## API Deployment
+### API Deployment
 
 * Create a free Heroku account (for the next steps you can either use the web GUI or download the Heroku CLI).
 * Create a new app and have it deployed from your GitHub repository.
