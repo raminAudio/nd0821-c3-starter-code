@@ -1,9 +1,10 @@
 # Information 
 
 *  Github Link : https://github.com/raminAudio/nd0821-c3-starter-code
-*  Heroku Link: https://raminapi2.herokuapp.com/
+*  Heroku Link: https://raminapi4.herokuapp.com/
 *  See model card model_card.md for more information. 
 
+See live_get_build_logs.png for heroku build logs. 
 
 ### Heroku Deployment Process:
  

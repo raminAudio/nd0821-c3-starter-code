@@ -25,3 +25,11 @@
 ./data/census.csv
 ./data/census_clean.csv
 ./data/xTrain.joblib
+./.dvc/cache/9c/8363ddb215280a47b2b0f4eb6145bb
+./.dvc/cache/ed/5dd964845a0f3a017551718ac32faa
+./.dvc/cache/26/fe782a9c253641e0b50a4207eed5da
+./.dvc/cache/14/5de00f6e6053d3f7044628f9a5b5ff
+./model/TFmodel_v1.h5
+./data/census.csv
+./data/census_clean.csv
+./data/xTrain.joblib
