@@ -1,23 +1,23 @@
-# Information 
+# Information
 
 *  Github Link : https://github.com/raminAudio/nd0821-c3-starter-code
 *  Heroku Link: https://raminapi4.herokuapp.com/
-*  See model card model_card.md for more information. 
+*  See model card model_card.md for more information.
 
-See live_get_build_logs.png for heroku build logs. 
+See live_get_build_logs.png for heroku build logs.
 
 ### Heroku Deployment Process:
- 
-heroku apps:destroy raminapi2 # I delete the app to make sure I have a clean slate. 
+
+heroku apps:destroy raminapi2 # I delete the app to make sure I have a clean slate.
 
 
-heroku create --app raminapi2 
+heroku create --app raminapi2
 
 heroku buildpacks:clear  
 
-heroku buildpacks:add --index 1 heroku-community/apt 
+heroku buildpacks:add --index 1 heroku-community/apt
 
-heroku buildpacks:add --index 2 heroku/python 
+heroku buildpacks:add --index 2 heroku/python
 
 heroku config:set AWS_ACCESS_KEY_ID="" AWS_SECRET_ACCESS_KEY=""
 
@@ -29,7 +29,7 @@ git commit -m ‘something Heroku’
 
 git push heroku master
 
-### Requierments: 
+### Requierments:
 
 numpy \\
 pandas \\
@@ -56,11 +56,31 @@ aws configure
 
 aws s3api create-bucket --bucket ramin-bucket2 --region us-west-1
 
+
+Cross-origin resource sharing (CORS)
+I added the following policy to AWS to make sure Heroku can pull data from s3. 
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET",
+            "HEAD",
+            "POST",
+            "PUT"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
 #### DCV S3 setup
 
 dvc remote add -f -d ramin-remote s3://raminbucket2/
 
-#### DVC Pipeline setup 
+#### DVC Pipeline setup
 
 dvc run --force -n pipeline -p n_units_l4 -p n_units_l1 -p n_units_l2 -p dropout1 -p dropout2 -p n_units_l3 -p lr -p epochs -d train_model.py -M fbeta.json python ./train_model.py
 
@@ -72,16 +92,16 @@ uvicorn src.main:app --host=0.0.0.0 --port=${PORT:-5000}
 
 uvicorn src.main:app --reload
 
-heroku run bash --app raminapi # see heroku folder 
+heroku run bash --app raminapi # see heroku folder
 
-##### Good to know 
+##### Good to know
 
 add this to your folder if Heroku is giving not found uvicorn error may help
 
 touch runtime.txt; echo "python-3.8.12” >> runtime.txt  
 
 
-##### If running out of space with Heroku try: 
+##### If running out of space with Heroku try:
 
 find . -size +1MB | cat >> .gitignore
 
@@ -98,7 +118,7 @@ pip list --format=freeze > requirements.txt
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-# Original Course Readme file. 
+# Original Course Readme file.
 Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
 
 ### Environment Set up
@@ -127,7 +147,7 @@ To use your new S3 bucket from the AWS CLI you will need to create an IAM user w
 * Give the user a name and select **Programmatic access**.
 * In the permissions selector, search for S3 and give it **AmazonS3FullAccess**
 * Tags are optional and can be skipped.
-* After reviewing your choices, click create user. 
+* After reviewing your choices, click create user.
 * Configure your AWS CLI to use the Access key ID and Secret Access key.
 
 ## GitHub Actions
