@@ -2,7 +2,7 @@ from ml.data import process_data
 from ml.model import compute_model_metrics, inference
 import logging 
 import json
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)-8s %(message)s', datefmt='%a, %d %b %Y %H:%M:%S', filename='testLog.log', filemode='w')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)-8s %(message)s', datefmt='%a, %d %b %Y %H:%M:%S', filename='eval_log.log', filemode='w')
 
 logger = logging.getLogger(__name__)  
 logger.setLevel(logging.INFO)

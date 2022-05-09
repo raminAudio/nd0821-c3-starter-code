@@ -1,4 +1,4 @@
 outs:
-- md5: 3c87be7ede6dd0df270ab13d269abc66
-  size: 3521160
+- md5: ed5dd964845a0f3a017551718ac32faa
+  size: 3515016
   path: TFmodel_v1.h5

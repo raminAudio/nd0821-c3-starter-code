@@ -1,9 +1,9 @@
 import pytest
 import pandas as pd
 import tensorflow as tf
-import pickle
 import logging
 import os 
+import joblib
 print(os.path.abspath(os.pardir))
 ROOT_DIR = os.path.abspath(os.curdir)
 
@@ -25,7 +25,7 @@ def test_model_exist():
 def test_model_predicts():
     try: 
         model = tf.keras.models.load_model( os.path.join(ROOT_DIR,'model/TFmodel_v1.h5'))
-        encoded_data = pickle.load(open( os.path.join(ROOT_DIR,'data/xTrain.pickle'),'rb'))
+        encoded_data = joblib.load(( os.path.join(ROOT_DIR,'data/xTrain.joblib')))
         model.predict(encoded_data)
     except: 
         assert False, "Model could not predict on encoded data"
@@ -35,7 +35,7 @@ def test_model_prediction_shape(dataTest):
     """ Test model can predict """
     try: 
         model = tf.keras.models.load_model( os.path.join(ROOT_DIR,'model/TFmodel_v1.h5'))
-        encoded_data = pickle.load(open( os.path.join(ROOT_DIR,'data/xTrain.pickle'),'rb'))
+        encoded_data = joblib.load(( os.path.join(ROOT_DIR,'data/xTrain.joblib')))
         prediction = model.predict(encoded_data)
         assert prediction.shape[1] == 2
     except: 

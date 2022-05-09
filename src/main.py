@@ -10,10 +10,10 @@ sys.path.insert(0, ROOT_DIR)
 
 from pydantic import BaseModel, Field
 from ml.model import inference
-import pickle
 import numpy as np
 import logging
 import uvicorn
+import joblib
 
 
 logger = logging.getLogger(__name__)
@@ -30,11 +30,11 @@ if "DYNO" in os.environ and os.path.isdir(".dvc"):
 
 try: 
     # Load encoeder and binarizer
-    encoder = pickle.load(open( os.path.join(ROOT_DIR,'data/encoder.pickle'),'rb'))
+    encoder = joblib.load(( os.path.join(ROOT_DIR,'data/encoder.joblib')))
     model = tf.keras.models.load_model( os.path.join(ROOT_DIR,'model/TFmodel_v1.h5'))
 except: 
     ROOT_DIR = os.path.abspath(os.curdir)
-    encoder = pickle.load(open( os.path.join(ROOT_DIR,'data/encoder.pickle'),'rb'))
+    encoder = joblib.load(( os.path.join(ROOT_DIR,'data/encoder.joblib')))
     model = tf.keras.models.load_model( os.path.join(ROOT_DIR,'model/TFmodel_v1.h5'))
 print(ROOT_DIR)
 #Declare the data object with its components and their type.

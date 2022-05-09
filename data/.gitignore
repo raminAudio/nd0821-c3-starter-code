@@ -7,3 +7,6 @@
 ./xTrain.pickle
 ./census_clean.csv
 /xTrain.pickle
+/encoder.joblib
+/lb.joblib
+/xTrain.joblib

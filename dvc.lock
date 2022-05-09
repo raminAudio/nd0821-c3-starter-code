@@ -4,8 +4,8 @@ stages:
     cmd: python ./train_model.py
     deps:
     - path: train_model.py
-      md5: 8398ead6366e6a57c25ca039aad9b351
-      size: 1172
+      md5: cd6d0126f746a710cab389c70b7fa3c6
+      size: 1230
     params:
       params.yaml:
         dropout1: 0.02
@@ -18,5 +18,5 @@ stages:
         n_units_l4: 128
     outs:
     - path: fbeta.json
-      md5: c416837c82ccbe7059fdb8e47bb925ec
-      size: 29
+      md5: 12168a28021c8a3369baddb23fecf35d
+      size: 28
