@@ -10,3 +10,4 @@ tensorflow-cpu
 pyyaml
 dvc
 dvc[s3]
+flake8

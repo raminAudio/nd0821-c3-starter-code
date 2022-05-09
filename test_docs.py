@@ -1,8 +1,10 @@
 from fastapi.testclient import TestClient
 import json
-from src.main import app
+from src import main
 
-client = TestClient(app)
+client = TestClient(main.app)
+
+print(client)
 
 more_sample = {'age': 50,
  'workclass': 'Private',
@@ -22,7 +24,7 @@ more_sample = {'age': 50,
 
 def test_prediction_bigger():
     r = client.post("/predict",data=json.dumps(more_sample))
-    assert r.status_code == 200
+    assert r.status_code == 200, r.status_code
     assert str(r.json()) == ">50K"
 
 
@@ -43,15 +45,17 @@ less_sample = {'age': 80,
 
 def test_prediction_smaller():
     r = client.post("/predict",data=json.dumps(less_sample))
-    assert r.status_code == 200
+    assert r.status_code == 200 , r.status_code
     assert str(r.json()) == "<=50K"
     
 def test_welcome_message():
     r = client.get("")
-    assert r.status_code == 200
+    assert r.status_code == 200, "test_welcome_message"
     assert r.json() == "Welcome to Project 4 for Salary Range Prediction!"
 
 
 def test_get_items():
     r = client.get("/predict")
-    assert r.status_code != 200
+    assert r.status_code != 200, "test_get_items"
+
+    

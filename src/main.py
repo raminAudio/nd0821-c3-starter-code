@@ -8,6 +8,10 @@ ROOT_DIR = os.path.abspath(os.pardir)
 print(ROOT_DIR)
 sys.path.insert(0, ROOT_DIR) 
 
+
+curr_DIR = os.path.abspath(os.curdir)
+sys.path.insert(0, curr_DIR) 
+
 from pydantic import BaseModel, Field
 from ml.model import inference
 import numpy as np
