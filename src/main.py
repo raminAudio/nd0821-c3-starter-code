@@ -17,6 +17,9 @@ import logging
 import uvicorn
 import joblib
 
+        
+# Instantiate the app.
+app = FastAPI()
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)-8s %(message)s', datefmt='%a, %d %b %Y %H:%M:%S', filename='log_main.log', filemode='w')
@@ -39,26 +42,42 @@ except:
     encoder = joblib.load(( os.path.join(ROOT_DIR,'data/encoder.joblib')))
     model = tf.keras.models.load_model( os.path.join(ROOT_DIR,'model/TFmodel_v1.h5'))
 
-#Declare the data object with its components and their type.
-class csvFile(BaseModel):
-    age: int
-    workclass: str
-    fnlgt: int
-    education: str
-    education_num : int = Field(alias='education-num')
-    marital_status : str = Field(alias='marital-status')
-    occupation : str
-    relationship : str
-    race : str
-    sex : str
-    capital_gain : int = Field(alias='capital-gain')
-    capital_loss : int = Field(alias='capital-loss')
-    hours_per_week : int = Field(alias='hours-per-week')
-    native_country : str = Field(alias='native-country')
-        
-# Instantiate the app.
-app = FastAPI()
+# #Declare the data object with its components and their type.
+# class csvFile(BaseModel):
+#     age: int
+#     workclass: str
+#     fnlgt: int
+#     education: str
+#     education_num : int = Field(alias='education-num')
+#     marital_status : str = Field(alias='marital-status')
+#     occupation : str
+#     relationship : str
+#     race : str
+#     sex : str
+#     capital_gain : int = Field(alias='capital-gain')
+#     capital_loss : int = Field(alias='capital-loss')
+#     hours_per_week : int = Field(alias='hours-per-week')
+#     native_country : str = Field(alias='native-country')
 
+class csvFile(BaseModel):
+    age: int = Field(..., example=25)
+    workclass: str = Field(..., example="Never-married")
+    fnlgt: int = Field(..., example=77516)
+    education: str = Field(..., example="Bachelors")
+    education_num: int = Field(..., alias="education-num", example=13)
+    marital_status: str = Field(...,
+                                alias="marital-status",
+                                example="Divorced")
+    occupation: str = Field(..., example="Adm-clerical")
+    relationship: str = Field(..., example="Husband")
+    race: str = Field(..., example="White")
+    sex: str = Field(..., example="Male")
+    capital_gain: int = Field(..., alias="capital-gain", example=0)
+    capital_loss: int = Field(..., alias="capital-loss", example=0)
+    hours_per_week: int = Field(..., alias="hours-per-week", example=40)
+    native_country: str = Field(...,
+                                alias="native-country",
+                                example="United-States")
 # Define a GET on the specified endpoint.
 @app.get("/")
 async def say_hello():
@@ -66,7 +85,7 @@ async def say_hello():
     return "Welcome to Project 4 for Salary Range Prediction!"
 
 # This allows sending of data (our TaggedItem) via POST to the API.
-@app.post("/predict")
+@app.post("/prediction")
 async def predict(input_: csvFile):
     '''
     predict salary from encoded posted data 
@@ -94,8 +113,8 @@ async def predict(input_: csvFile):
     else:
         return ">50K"
     
-# if __name__ == "__main__":
-#     import uvicorn
-#     uvicorn.run(app)
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app)
 
 
