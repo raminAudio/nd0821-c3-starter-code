@@ -5,9 +5,7 @@ import tensorflow as tf
 import os
 import sys
 ROOT_DIR = os.path.abspath(os.pardir)
-print(ROOT_DIR)
 sys.path.insert(0, ROOT_DIR) 
-
 
 curr_DIR = os.path.abspath(os.curdir)
 sys.path.insert(0, curr_DIR) 
@@ -40,7 +38,7 @@ except:
     ROOT_DIR = os.path.abspath(os.curdir)
     encoder = joblib.load(( os.path.join(ROOT_DIR,'data/encoder.joblib')))
     model = tf.keras.models.load_model( os.path.join(ROOT_DIR,'model/TFmodel_v1.h5'))
-print(ROOT_DIR)
+
 #Declare the data object with its components and their type.
 class csvFile(BaseModel):
     age: int

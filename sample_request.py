@@ -5,8 +5,8 @@ import json
 input_ = {"age": 31,
         "workclass": "Private",
         "fnlgt": 45781,
-        "education": "Masters",
-        "education-num": 14,
+        "education": "HS-grad",
+        "education-num": 9,
         "marital-status": "Never-married",
         "occupation": "Prof-specialty",
         "relationship": "Not-in-family",
@@ -14,7 +14,7 @@ input_ = {"age": 31,
         "sex": "Female",
         "capital-gain": 14084,
         "capital-loss": 0,
-        "hours-per-week": 50,
+        "hours-per-week": 40,
         "native-country": "United-States"}
 
 
