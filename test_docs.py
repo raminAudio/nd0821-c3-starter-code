@@ -24,7 +24,7 @@ more_sample = {'age': 50,
 
 def test_prediction_bigger():
     r = client.post("/predict",data=json.dumps(more_sample))
-    assert r.status_code == 200, r.status_code
+    assert r.status_code == 200, r.json()
     assert str(r.json()) == ">50K"
 
 
@@ -45,7 +45,7 @@ less_sample = {'age': 80,
 
 def test_prediction_smaller():
     r = client.post("/predict",data=json.dumps(less_sample))
-    assert r.status_code == 200 , r.status_code
+    assert r.status_code == 200 , r.json()
     assert str(r.json()) == "<=50K"
     
 def test_welcome_message():
