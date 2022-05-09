@@ -94,8 +94,8 @@ async def predict(input_: csvFile):
     else:
         return ">50K"
     
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app)
 
 
