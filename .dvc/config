@@ -1,5 +1,4 @@
 [core]
     remote = ramin-remote
-    autostage = true
 ['remote "ramin-remote"']
-    url = s3://raminbucket2/
+    url = s3://ramin-bucket3/
