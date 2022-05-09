@@ -1,16 +1,16 @@
 # Information 
 
 *  Github Link : https://github.com/raminAudio/nd0821-c3-starter-code
-*  Heroku Link: https://raminapi.herokuapp.com/
+*  Heroku Link: https://raminapi2.herokuapp.com/
 *  See model card model_card.md for more information. 
 
 
 ### Heroku Deployment Process:
  
-heroku apps:destroy raminapi # I delete the app to make sure I have a clean slate. 
+heroku apps:destroy raminapi2 # I delete the app to make sure I have a clean slate. 
 
 
-heroku create --app raminapi 
+heroku create --app raminapi2 
 
 heroku buildpacks:clear  
 
@@ -20,9 +20,15 @@ heroku buildpacks:add --index 2 heroku/python
 
 heroku config:set AWS_ACCESS_KEY_ID="" AWS_SECRET_ACCESS_KEY=""
 
+heroku git:remote --app raminapi2
+
+git gc
+git add *
+git commit -m ‘something Heroku’
+
 git push heroku master
 
-Requierments: 
+### Requierments: 
 
 numpy \\
 pandas \\
@@ -44,12 +50,17 @@ dvc-s3 \\
 conda create -n udacityPr4 "python=3.8.12” scikit-learn dvc pandas numpy pytest jupyter jupyterlab fastapi tensorflow-cpu gunicorn pyyaml uvicorn -c conda-forge
 
 #### AWS bucket Setup
+
+aws configure
+
 aws s3api create-bucket --bucket ramin-bucket2 --region us-west-1
 
 #### DCV S3 setup
+
 dvc remote add -f -d ramin-remote s3://raminbucket2/
 
 #### DVC Pipeline setup 
+
 dvc run --force -n pipeline -p n_units_l4 -p n_units_l1 -p n_units_l2 -p dropout1 -p dropout2 -p n_units_l3 -p lr -p epochs -d train_model.py -M fbeta.json python ./train_model.py
 
 dvc exp show  # to see metrics for different expriement
@@ -63,15 +74,28 @@ uvicorn src.main:app --reload
 heroku run bash --app raminapi # see heroku folder 
 
 ##### Good to know 
-touch runtime.txt; echo "python-3.8.12” >> runtime.txt  
 
 add this to your folder if Heroku is giving not found uvicorn error may help
 
+touch runtime.txt; echo "python-3.8.12” >> runtime.txt  
+
+
 ##### If running out of space with Heroku try: 
+
+find . -size +1MB | cat >> .gitignore
+
 heroku plugins:install heroku-builds
 heroku builds:cancel
 heroku restart
 
+heroku plugins:install heroku-builds
+heroku builds:cache:purge -a raminapi
+git commit --allow-empty -m "Purge cache"
+
+pip list --format=freeze > requirements.txt
+
+
+----------------------------------------------------------------------------------------------------------------------------------
 
 # Original Course Readme file. 
 Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
